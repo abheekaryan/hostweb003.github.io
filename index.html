@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+	<meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width initial-scale=1" >
+<head>
+
+
+	
+<style>
+*{magin:4px; padding:4px;}
+
+.intro{overflow:auto;}
+
+h1{
+	text-align:center;
+}
+
+#main{border:1px solid black; width:400px; height:300px; margin:24px auto;}
+
+#msg_area{border:2px solid blue; width=98%;height:250px;}
+
+li{border:1px solid black ; display:inline;  padding:7px ;}
+</style>
+ 
+ <title>World's Reviews</title>
+ </head>
+ 
+ 
+ <body>
+ 
+   <h1><a>Welcome </a></h1>
+   
+<div class="intro"> 
+
+     <ul>
+	  <li>
+	  <img src="OIP.jpg" alt="movies" width="20" height="20"><a href="getMovies.php">Movies</a>
+	  </li>
+	  <li>
+	  <img src="OIP2.png" alt="movies" width="20" height="20">
+	  <a href="getTvseries.php">Tv Series</a>
+	  </li> 
+	  <li>
+	  <img src="OIP3.jpg" alt="movies" width="20" height="20">
+	  <a href="getDocumentary.php">Documentary</a>
+	  </li> 
+	  </ul>
+	  
+</div>
+	  
+
+ 
+ <div  id="main">
+ <div id="msg_area">
+
+
+ <?php include("rbox.php");?>
+ 
+ </div>
+ 
+ 
+ 
+ <form method="POST">
+ <input type="text"   name="review_msg" placeholder="Type your review here"/>
+ <input type="submit" name="submit"  value="submit"/>
+ </form>
+ 
+ 
+ </div>
+ 
+ 
+	<footer>
+	Review-Box <br>
+	Made for All	<br>
+	</footer>
+ </div>	
+  </body>
+</html>
